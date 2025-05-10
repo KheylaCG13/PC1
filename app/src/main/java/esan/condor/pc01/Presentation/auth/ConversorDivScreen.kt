@@ -28,9 +28,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 @Composable
-fun ConversorDivScreen() {
+fun ConversorDivScreen(navController: NavController) {
     var montoText by remember { mutableStateOf("") }
     var tipoConversion by remember { mutableStateOf("USD a PEN") }
     var resultado by remember { mutableStateOf("") }

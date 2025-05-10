@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
 
 data class Producto(
@@ -21,7 +22,7 @@ data class Producto(
 )
 
 @Composable
-fun CatalogoProdScreen() {
+fun CatalogoProdScreen(navController: NavController) {
     val productos = listOf(
         Producto(
             nombre = "Laptop Dell XPS 13",

@@ -7,24 +7,21 @@ import androidx.navigation.compose.rememberNavController
 import esan.condor.pc01.Presentation.auth.*
 
 @Composable
-fun NavigationMenu(){
+fun NavigationMenu() {
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = "menu"){
-        composable("menu"){
-            MenuPrincipalScreen()
+    NavHost(navController = navController, startDestination = "menu") {
+        composable("menu") {
+            MenuPrincipalScreen(navController)
         }
-        composable("calculadoraEdad"){
-            TODO()
+        composable("calculadoraEdad") {
+            CalculadoraEdadCaninaScreen(navController)
         }
-
-        //Navigation
-        composable("conversor"){
-            TODO()
+        composable("conversor") {
+            ConversorDivScreen(navController)
         }
-
-        composable("catalogo"){
-            TODO()
+        composable("catalogo") {
+            CatalogoProdScreen(navController)
         }
     }
 }

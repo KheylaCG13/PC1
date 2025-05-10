@@ -16,40 +16,36 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun MenuPrincipalScreen() {
+fun MenuPrincipalScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(26.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp)
     ) {
-        Spacer(modifier = Modifier.width(16.dp))
         Text("Menu Principal", style = MaterialTheme.typography.titleLarge)
 
-        //boton para acceder a la pantalla de calculadora de edad canina
         Button(
             onClick = {
-                //navController.navigate("")
+                navController.navigate("calculadoraEdad")
             },
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Calculadora Edad Canina")
         }
 
-        //boton para acceder a la pantalla de conversor de divisas
         Button(
             onClick = {
-                //navController.navigate("home")
+                navController.navigate("conversor")
             },
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Conversor de Divisas")
         }
 
-        //boton para acceder a la pantalla de catalogo de productos
         Button(
             onClick = {
-                //navController.navigate("home")
+                navController.navigate("catalogo")
             },
             modifier = Modifier.fillMaxWidth()
         ) {

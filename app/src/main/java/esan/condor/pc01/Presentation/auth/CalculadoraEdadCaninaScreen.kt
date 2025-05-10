@@ -24,9 +24,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 @Composable
-fun CalculadoraEdadCaninaScreen() {
+fun CalculadoraEdadCaninaScreen(navController: NavController) {
     var edadText by remember { mutableStateOf("") }
     var tamanoText by remember { mutableStateOf("Pequeño") }
     var expanded by remember { mutableStateOf(false) }

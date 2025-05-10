@@ -15,6 +15,7 @@ import esan.condor.pc01.Presentation.auth.CalculadoraEdadCaninaScreen
 import esan.condor.pc01.Presentation.auth.CatalogoProdScreen
 import esan.condor.pc01.Presentation.auth.ConversorDivScreen
 import esan.condor.pc01.Presentation.auth.MenuPrincipalScreen
+import esan.condor.pc01.Presentation.navigation.NavigationMenu
 import esan.condor.pc01.ui.theme.PC1Theme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PC1Theme {
-                CatalogoProdScreen()
+                NavigationMenu()
             }
         }
     }
